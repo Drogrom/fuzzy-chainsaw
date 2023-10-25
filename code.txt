@@ -1,0 +1,144 @@
+1. Создание объекта класса Person:
+
+
+
+Person person = new Person("Андрей", "Ярыгин", "Students GeekBrains", 20);
+​
+
+
+Здесь создается объект класса Person с параметрами: "Андрей", "Ярыгин", "Students GeekBrains", 20.
+
+2. Установка значений свойств объекта:
+
+
+
+person.FirstName = "Андрей";
+person.LastName = "Ярыгин";
+person.University = "Students GeekBrains";
+person.Age = 20;
+​
+
+
+Здесь значения свойств объекта person ("Андрей", "Ярыгин", "Students GeekBrains", 20) устанавливаются соответственно.
+
+3. Получение значений свойств объекта:
+
+
+string firstName = person.FirstName;
+string lastName = person.LastName;
+string university = person.University;
+int age = person.Age;
+​
+
+
+Здесь значения свойств объекта person ("FirstName", "LastName", "University", "Age") получаются и сохраняются в переменные firstName, lastName, university, age соответственно.
+
+4. Вызов метода для получения информации о человеке:
+
+
+string info = person.GetInfo();
+Console.WriteLine(info);
+​
+
+
+Здесь вызывается метод GetInfo() объекта person, который возвращает строку с информацией о человеке. Эта строка затем выводится на консоль.
+
+5. Вызов метода для проверки, является ли человек студентом:
+
+
+
+bool isStudent = person.IsStudent();
+Console.WriteLine($"Is student: {isStudent}");
+​
+
+
+Здесь вызывается метод IsStudent() объекта person, который проверяет, является ли человек студентом. Результат проверки (true или false) сохраняется в переменной isStudent и выводится на консоль.
+
+6. Вызов метода для проверки, является ли человек выпускником:
+
+
+
+
+1. Создать новый класс Person.
+
+
+
+public class Person
+{
+   // ...
+}
+​
+
+
+2. Определить свойства класса Person: FirstName, LastName, University, Age.
+
+
+
+public string FirstName { get; set; }
+public string LastName { get; set; }
+public string University { get; set; }
+public int Age { get; set; }
+​
+
+
+3. Создать конструктор класса Person, который принимает параметры: firstName, lastName, university, age.
+
+
+
+public Person(string firstName, string lastName, string university, int age)
+{
+   FirstName = firstName;
+   LastName = lastName;
+   University = university;
+   Age = age;
+}
+​
+
+
+4. Создать список объектов класса Person.
+
+
+
+List<Person> constructer = new List<Person>
+{
+   // ...
+};
+​
+
+
+5. Создать объекты класса Person и добавить их в список.
+
+
+
+constructer.Add(new Person { Name = "Анна", Age = 25, University = "МГУ", Gender = "Женский" });
+constructer.Add(new Person { Name = "Василий", Age = 30, University = "СПбГУ", Gender = "Мужской" });
+// ...
+​
+
+
+6. Отсортировать список объектов класса Person по имени.
+
+
+
+constructer.Sort((x, y) => string.Compare(x.Name, y.Name));
+​
+
+
+7. Вывести отсортированный список объектов класса Person.
+
+
+
+foreach (Person p in constructer)
+   Console.WriteLine(p.Name);
+​
+
+
+8. Создать список списков строк, представляющих собой информацию о животных, и добавить их в список.
+
+
+
+List<string[]> lLists = new List<string[]>
+{
+   // ...
+};
+​

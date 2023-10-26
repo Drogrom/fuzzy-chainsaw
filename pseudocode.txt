@@ -1,0 +1,28 @@
+def process_array(arr):
+    # Удаляем элементы с длиной больше 3
+    filtered_arr = [element for element in arr if len(element) <= 3]
+    
+    # Получаем массив с определенной длиной
+    res_arr = filtered_arr[:3]
+    
+    return res_arr
+
+def main():
+    # Исходные массивы
+    List<String> array1 = new ArrayList<>(Arrays.asList("hello", "2", "world", ":-)"));
+    List<String> array2 = new ArrayList<>(Arrays.asList("1234", "1567", "-2", "computer science"));
+    List<String> array3 = new ArrayList<>(Arrays.asList("Russia", "Denmark", "Kazan"));
+
+
+    # Матрица из исходных массивов
+    matrix = [array1, array2, array3]
+
+    # Обрабатываем каждый массив
+    for i in range(len(matrix)):
+        original_array = matrix[i]
+        processed_array = process_array(original_array)
+
+        # Вывод результатов
+        print(f"Оригинальный массив: {original_array}")
+        print(f"Обработанный массив: {processed_array}")
+        print()
